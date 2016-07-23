@@ -11,8 +11,17 @@
 		to{top:-56px}
 	}
 	.box{ width:800px; height:56px; margin:200px auto; border-radius:25px; border:1px solid #000; overflow:hidden ; position:relative;}
-	.box div{ width:800px; height:800px; background:-webkit-repeating-linear-gradient(-45deg,#FF0000 0,#FF0000 10px, #CCC000 10px,#CCC000 20px, #FF0000 20px); position:absolute; top:0;
-	-webkit-animation:int .8s linear infinite}
+	.box div{ width:800px; height:800px; 
+	background:-webkit-repeating-linear-gradient(-45deg,#FF0000 0,#FF0000 10px, #CCC000 10px,#CCC000 20px, #FF0000 20px); 
+	background:-moz-repeating-linear-gradient(-45deg,#FF0000 0,#FF0000 10px, #CCC000 10px,#CCC000 20px, #FF0000 20px); 
+	background:-ms-repeating-linear-gradient(-45deg,#FF0000 0,#FF0000 10px, #CCC000 10px,#CCC000 20px, #FF0000 20px); 
+	background:-o-repeating-linear-gradient(-45deg,#FF0000 0,#FF0000 10px, #CCC000 10px,#CCC000 20px, #FF0000 20px); 
+	position:absolute; top:0;
+	-webkit-animation:int .8s linear infinite;
+	-moz-animation:int .8s linear infinite;
+	-ms-animation:int .8s linear infinite;
+	-o-animation:int .8s linear infinite;
+	}
 </style>
 
 <script>
@@ -30,6 +39,9 @@
 					oSpan[index].innerHTML=this.value;
 					//alert('aaa'+aInt[0].value+'aa')
 					oDiv.style.background='-webkit-repeating-linear-gradient(-45deg,red 0,'+aInt[0].value+' 10px, '+aInt[1].value+' 10px,'+aInt[1].value+' 20px, '+aInt[0].value+' 20px)';
+					oDiv.style.background='-moz-repeating-linear-gradient(-45deg,red 0,'+aInt[0].value+' 10px, '+aInt[1].value+' 10px,'+aInt[1].value+' 20px, '+aInt[0].value+' 20px)';
+					oDiv.style.background='-ms-repeating-linear-gradient(-45deg,red 0,'+aInt[0].value+' 10px, '+aInt[1].value+' 10px,'+aInt[1].value+' 20px, '+aInt[0].value+' 20px)';
+					oDiv.style.background='-o-repeating-linear-gradient(-45deg,red 0,'+aInt[0].value+' 10px, '+aInt[1].value+' 10px,'+aInt[1].value+' 20px, '+aInt[0].value+' 20px)';
 				}
 			})(i)
 		}
