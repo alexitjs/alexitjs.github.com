@@ -38,10 +38,10 @@
 				aInt[index].onchange=function(){
 					oSpan[index].innerHTML=this.value;
 					//alert('aaa'+aInt[0].value+'aa')
-					oDiv.style.background='-webkit-repeating-linear-gradient(-45deg,red 0,'+aInt[0].value+' 10px, '+aInt[1].value+' 10px,'+aInt[1].value+' 20px, '+aInt[0].value+' 20px)';
-					oDiv.style.background='-moz-repeating-linear-gradient(-45deg,red 0,'+aInt[0].value+' 10px, '+aInt[1].value+' 10px,'+aInt[1].value+' 20px, '+aInt[0].value+' 20px)';
-					oDiv.style.background='-ms-repeating-linear-gradient(-45deg,red 0,'+aInt[0].value+' 10px, '+aInt[1].value+' 10px,'+aInt[1].value+' 20px, '+aInt[0].value+' 20px)';
-					oDiv.style.background='-o-repeating-linear-gradient(-45deg,red 0,'+aInt[0].value+' 10px, '+aInt[1].value+' 10px,'+aInt[1].value+' 20px, '+aInt[0].value+' 20px)';
+					oDiv.style.background='-webkit-repeating-linear-gradient(-45deg,'+aInt[0].value+' 0,'+aInt[0].value+' 10px, '+aInt[1].value+' 10px,'+aInt[1].value+' 20px, '+aInt[0].value+' 20px)';
+					oDiv.style.background='-moz-repeating-linear-gradient(-45deg,'+aInt[0].value+' 0,'+aInt[0].value+' 10px, '+aInt[1].value+' 10px,'+aInt[1].value+' 20px, '+aInt[0].value+' 20px)';
+					oDiv.style.background='-ms-repeating-linear-gradient(-45deg,'+aInt[0].value+' 0,'+aInt[0].value+' 10px, '+aInt[1].value+' 10px,'+aInt[1].value+' 20px, '+aInt[0].value+' 20px)';
+					oDiv.style.background='-o-repeating-linear-gradient(-45deg,'+aInt[0].value+' 0,'+aInt[0].value+' 10px, '+aInt[1].value+' 10px,'+aInt[1].value+' 20px, '+aInt[0].value+' 20px)';
 				}
 			})(i)
 		}
