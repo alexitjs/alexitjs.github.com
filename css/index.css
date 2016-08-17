@@ -157,7 +157,8 @@ span.move_btn{ display: block; width: 300px; height: 60px; border-radius:30px; l
 #div2{width:300px;height:360px; overflow:hidden; display:none;}
 #div2 img{ position:absolute; left:0; top:0;}
 
-#box{ width:250px ; height: 250px; border-radius: 50%; overflow: hidden; background: url(../img/272x250d.jpg); position:absolute; top:0; left:0;}
+#box{ width:100px ; height: 100px; border-radius: 50%; background: url(../img/272x250d.jpg); background-size:100%; position:absolute; top:80px; left:20px;}
+#box .txt{ width:100px; text-align:center; height:30px; line-height:30px ;position:absolute; top:-30px; color:#F06; font-size: 20px;}
 
 
 

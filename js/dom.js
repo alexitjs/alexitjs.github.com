@@ -152,7 +152,9 @@ window.onload=function(){
 			var iSpeedY = 0;
 			var lastX = 0;
 			var lastY = 0;
+			var oTxt=getByClass(document,'txt')[0];
 			oBox.onmousedown=function(ev){
+				oTxt.style.display='none';
 				clearInterval(oBox.timer);
 				var oEvent = ev||event;
 				var disX = oEvent.clientX-oBox.offsetLeft;
